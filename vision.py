@@ -4,10 +4,6 @@ import io
 from google.cloud import vision
 from google.cloud.vision import types
 
-credentials = "/Users/simonpersson/Documents/GitHub/cloud-vision-test/credentials/cloud-vision-test-98fe0bc61133.json"
-
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials
-
 client = vision.ImageAnnotatorClient()
 
 file_name = os.path.join(
